@@ -25,3 +25,11 @@ body {
     text-wrap: balance;
   }
 }
+
+.article-content h2 {
+  color: #4a4f54;
+  font-size: 1.625rem;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
