@@ -1,40 +1,98 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## News Article Single Page App
+
+This is a single-page news article application built using Next.js. It was developed as part of a React Developer interview practical test. The application demonstrates the use of various React and Next.js features, along with modern UI libraries to create a responsive and dynamic web page that displays news article content.
+
+## Features
+
+Next.js Framework: Utilizes Next.js for server-side rendering and optimized performance.
+Dynamic Content Rendering: Displays dynamic news article content using a JSON data file.
+Responsive UI: Responsive design implemented using Tailwind CSS and @nextui-org/react components.
+Reusability: Custom reusable components like Content and HeaderMenu for easy maintenance and extension.
+SVG Icons: Includes custom SVG icons for social sharing and bookmarking.
+Newsletter Subscription: A mock newsletter subscription form with validation.
+Styled Components: Use of Tailwind CSS and @nextui-org/react for efficient styling and layout.
+Technologies Used
+React.js: Core library for building the UI.
+Next.js: Framework for server-side rendering and static site generation.
+Tailwind CSS: Utility-first CSS framework for styling.
+@nextui-org/react: UI components for React applications.
+JavaScript: Logic implementation and interaction.
+SVG Icons: Custom icons for various functionalities.
 
 ## Getting Started
 
-First, run the development server:
+- Prerequisites
+Make sure you have the following installed on your system:
 
-```bash
+Node.js (v14 or above)
+npm or yarn
+
+- Installation
+
+Clone the repository:
+git clone https://github.com/RukshanRanabahu/news-article.git
+
+Navigate to the project directory:
+cd news-article
+
+Install the dependencies:
+npm install
+
+or if using yarn:
+yarn install
+
+- Running the Application
+
+To run the application in development mode, use the following command:
 npm run dev
-# or
+
+or if using yarn:
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open your browser and navigate to http://localhost:3000 to see the application in action.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Building for Production
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+To create an optimized production build:
+npm run build
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+or if using yarn:
+yarn build
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Then, you can start the production server:
+npm start
 
-## Learn More
+or if using yarn:
+yarn start
 
-To learn more about Next.js, take a look at the following resources:
+## Deployment
+This project can be deployed to any hosting service that supports Next.js, such as Vercel, Netlify, or any Node.js-compatible service.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Folder Structure
+.
+├── components
+│   ├── HeaderMenu.js        # Header component with navigation links and dropdown
+│   ├── Content.js           # Main content component to render the news article
+│   └── icons                # Custom SVG icons for various functionalities
+├── dummy-data
+│   ├── article.json         # JSON file containing the news article content
+│   └── header.json          # JSON file containing header menu items
+├── pages
+│   └── index.js             # Main entry point of the application
+├── public                   # Public assets and images
+├── styles                   # Global styles and Tailwind CSS configuration
+│   └── globals.css
+└── README.md                # This file
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Future Improvements
+API Integration: Replace dummy JSON data with a live API to fetch real-time news articles.
+Enhanced Search and Filter: Implement search and filtering capabilities to browse through various news topics.
+State Management: Use a state management library like Redux or React Context API for better state handling.
+License
+This project is licensed under the MIT License. See the LICENSE file for more details.
 
-## Deploy on Vercel
+## Contact
+For any inquiries or feedback, feel free to reach out:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Email: rukshanranabahu@gmail.com
+GitHub: RukshanRanabahu
