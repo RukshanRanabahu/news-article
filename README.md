@@ -85,6 +85,7 @@ Folder Structure
 └── README.md                # This file
 
 ## Future Improvements
+
 API Integration: Replace dummy JSON data with a live API to fetch real-time news articles.
 Enhanced Search and Filter: Implement search and filtering capabilities to browse through various news topics.
 State Management: Use a state management library like Redux or React Context API for better state handling.
